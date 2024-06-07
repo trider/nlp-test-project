@@ -1,0 +1,39 @@
+<div class="container">
+ <div class="row">
+   <div class="col d-block">
+    <h2 >Test Page</h2>
+    
+      <form class="form" [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label >Name</label>
+          <input type="text" class="form-control" formControlName="name">
+        </div>
+        <div class="mb-3">
+         <label for="taskName">Phone</label>
+         <input type="text" class="form-control" formControlName="phone">
+       </div>
+       <div class="mb-3">
+        <label>Opening Sentence</label>
+
+        <app-opening-sentence formControlName="tags"   (tagsEvent)="getTags($event)"> </app-opening-sentence>
+      
+       </div>
+       
+        
+       
+        <div class="text-center d-grid" style="margin-top:10px">
+          <button type="submit" class="btn btn-dark rounded-pill ">Submit</button>
+        </div>
+       </form>
+   </div>
+   
+   <div class="col col-5 d-none d-lg-block">
+    <div class="card card-nlp" >
+      <div class="card-body">
+        <span class="card-text">Unlock the Power of Conversation with NLPearl and Transform your Business Interactions</span>
+      </div>
+    </div>
+   </div>
+ </div>
+</div>
+
