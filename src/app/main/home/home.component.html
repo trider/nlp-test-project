@@ -1,7 +1,7 @@
 <div class="container">
  <div class="row">
    <div class="col d-block">
-    <h2 >Test Page</h2>
+    <h2 >NLP Chat Demo</h2>
     
       <form class="form" [formGroup]="form" (ngSubmit)="onSubmit()">
         <div class="mb-3">
@@ -13,7 +13,7 @@
          <input type="text" class="form-control" formControlName="phone">
        </div>
        <div class="mb-3">
-        <label>Opening Sentence</label>
+        <label>Customer Agent Prompt</label>
 
         <app-opening-sentence formControlName="tags"   (tagsEvent)="getTags($event)"> </app-opening-sentence>
       
@@ -27,10 +27,23 @@
        </form>
    </div>
    
-   <div class="col col-5 d-none d-lg-block">
+   <div class="col col-5 d-none d-sm-block">
     <div class="card card-nlp" >
       <div class="card-body">
-        <span class="card-text">Unlock the Power of Conversation with NLPearl and Transform your Business Interactions</span>
+        <span class="card-text">Unlock the Power of Conversation with NLP Chat and Transform your Business Interactions</span>
+      </div>
+    </div>
+
+    <div class="card card-instructions" >
+      <div class="card-body">
+        <p>To start a chat</p>
+        <ol>
+          <li>Enter your name and phone number</li>
+          <li>In the Customer Agent Prompt, edit and expand the placeholder text</li>
+          <li>Click on the tags to add them to the prompt</li>
+          <li>Create your own tags, by surrounding a single word or phrase with two sets of square brackets,[[My Tag]], and press return</li>
+          <li>Click Submit. An alert will show you all the data you submitted</li>
+        </ol>
       </div>
     </div>
    </div>
