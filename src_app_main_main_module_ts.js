@@ -277,7 +277,7 @@ class HomeComponent {
   constructor() {
     this.external = "external";
     this.form = new _angular_forms__WEBPACK_IMPORTED_MODULE_1__.FormGroup({
-      name: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__.FormControl(),
+      name: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__.FormControl('John Doe'),
       phone: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__.FormControl('123-456-7891'),
       tags: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__.FormControl()
     });
@@ -298,13 +298,13 @@ class HomeComponent {
     selectors: [["app-home"]],
     standalone: true,
     features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵStandaloneFeature"]],
-    decls: 26,
+    decls: 41,
     vars: 1,
-    consts: [[1, "container"], [1, "row"], [1, "col", "d-block"], [1, "form", 3, "ngSubmit", "formGroup"], [1, "mb-3"], ["type", "text", "formControlName", "name", 1, "form-control"], ["for", "taskName"], ["type", "text", "formControlName", "phone", 1, "form-control"], ["formControlName", "tags", 3, "tagsEvent"], [1, "text-center", "d-grid", 2, "margin-top", "10px"], ["type", "submit", 1, "btn", "btn-dark", "rounded-pill"], [1, "col", "col-5", "d-none", "d-lg-block"], [1, "card", "card-nlp"], [1, "card-body"], [1, "card-text"]],
+    consts: [[1, "container"], [1, "row"], [1, "col", "d-block"], [1, "form", 3, "ngSubmit", "formGroup"], [1, "mb-3"], ["type", "text", "formControlName", "name", 1, "form-control"], ["for", "taskName"], ["type", "text", "formControlName", "phone", 1, "form-control"], ["formControlName", "tags", 3, "tagsEvent"], [1, "text-center", "d-grid", 2, "margin-top", "10px"], ["type", "submit", 1, "btn", "btn-dark", "rounded-pill"], [1, "col", "col-5", "d-none", "d-sm-block"], [1, "card", "card-nlp"], [1, "card-body"], [1, "card-text"], [1, "card", "card-instructions"]],
     template: function HomeComponent_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "h2");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](4, "Test Page");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](4, "NLP Chat Demo");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](5, "form", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("ngSubmit", function HomeComponent_Template_form_ngSubmit_5_listener() {
@@ -321,7 +321,7 @@ class HomeComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](13, "input", 7);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](14, "div", 4)(15, "label");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](16, "Opening Sentence");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](16, "Customer Agent Prompt");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](17, "app-opening-sentence", 8);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("tagsEvent", function HomeComponent_Template_app_opening_sentence_tagsEvent_17_listener($event) {
@@ -332,8 +332,26 @@ class HomeComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](20, "Submit");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()()();
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](21, "div", 11)(22, "div", 12)(23, "div", 13)(24, "span", 14);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](25, "Unlock the Power of Conversation with NLPearl and Transform your Business Interactions");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()()()()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](25, "Unlock the Power of Conversation with NLP Chat and Transform your Business Interactions");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](26, "div", 15)(27, "div", 13)(28, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](29, "To start a chat");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](30, "ol")(31, "li");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](32, "Enter your name and phone number");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](33, "li");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](34, "In the Customer Agent Prompt, edit and expand the placeholder text");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](35, "li");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](36, "Click on the tags to add them to the prompt");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](37, "li");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](38, "Create your own tags, by surrounding a single word or phrase with two sets of square brackets,[[My Tag]], and press return");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](39, "li");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](40, "Click Submit. An alert will show you all the data you submitted");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()()()()()();
       }
       if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](5);

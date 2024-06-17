@@ -11879,11 +11879,25 @@ h1, .h1 {
 .card-nlp {
   background-color: #5a55f4;
   border-radius: 20px;
-  height: 100%;
+  margin-bottom: 5%;
+  height: 20%;
 }
 .card-nlp .card-body {
   font-size: x-large;
   color: white;
+  min-height: 450px;
+  top: 84px;
+  left: 730px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.card-instructions {
+  border-radius: 20px;
+  margin-bottom: 5%;
+  height: 35%;
+}
+.card-instructions .card-body {
   min-height: 450px;
   top: 84px;
   left: 730px;
